@@ -36,7 +36,6 @@
             toolStripSeparator2 = new ToolStripSeparator();
             closeToolStripMenuItem = new ToolStripMenuItem();
             helpToolStripMenuItem = new ToolStripMenuItem();
-            fAQToolStripMenuItem = new ToolStripMenuItem();
             aboutToolStripMenuItem = new ToolStripMenuItem();
             labelTitle = new Label();
             labelSONumberText = new Label();
@@ -97,6 +96,7 @@
             // 
             // openOrderToolStripMenuItem
             // 
+            openOrderToolStripMenuItem.Enabled = false;
             openOrderToolStripMenuItem.Name = "openOrderToolStripMenuItem";
             openOrderToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.O;
             openOrderToolStripMenuItem.Size = new Size(180, 22);
@@ -116,16 +116,10 @@
             // 
             // helpToolStripMenuItem
             // 
-            helpToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { fAQToolStripMenuItem, aboutToolStripMenuItem });
+            helpToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aboutToolStripMenuItem });
             helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             helpToolStripMenuItem.Size = new Size(44, 20);
             helpToolStripMenuItem.Text = "&Help";
-            // 
-            // fAQToolStripMenuItem
-            // 
-            fAQToolStripMenuItem.Name = "fAQToolStripMenuItem";
-            fAQToolStripMenuItem.Size = new Size(180, 22);
-            fAQToolStripMenuItem.Text = "FAQ";
             // 
             // aboutToolStripMenuItem
             // 
@@ -461,7 +455,6 @@
         private ToolStripSeparator toolStripSeparator2;
         private ToolStripMenuItem helpToolStripMenuItem;
         private ToolStripMenuItem aboutToolStripMenuItem;
-        private ToolStripMenuItem fAQToolStripMenuItem;
         private Label labelTitle;
         private Label labelSONumberText;
         private Label labelSORegNum;
